@@ -1,0 +1,164 @@
+@import "/src/style/_variables";
+@import "/src/style/component/button";
+
+
+.uk-card-product{
+  background: $acent-color;
+  border-radius: 25px;
+  color:$text-color;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: -12px 13px 11px #0F1546;
+  border-radius: 15px;
+  padding: 15% 10px;
+
+  img{
+    height: 60%;
+    width: 60%;
+  }
+}
+.uk-card-product-details{
+  padding: 15px 10px;
+
+  .uk-product-name{
+    color: $text-color;
+    font-family: $primary-fonts;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+  }
+
+  mat-icon{
+    color: $text-color;
+  }
+
+  .uk-product-desc{
+    margin-top: -10px;
+
+    .uk-product-reviews{
+      color: $text-color;
+      font-family: $primary-fonts;
+      font-style: normal;
+      font-weight: 600;
+      margin-left: -20px;
+      margin-top: 5px;
+      margin-bottom: 0px !important;
+      display: flex;
+      align-items: flex-end;
+      text-decoration-line: underline;
+    }
+  }
+
+  .uk-sec-sku{
+    margin-top: 10%;
+
+    .uk-sku{
+      color: $text-color;
+      font-family: $secondary-fonts;
+      font-style: normal;
+      font-weight: bold;
+      display: flex;
+      align-items: flex-end;
+      letter-spacing: 0.25px;
+
+      &-name{
+        font-weight: normal;
+        margin-left: 5px;
+      }
+  }
+  }
+
+  .uk-sec-brand{
+    margin-top: -15px;
+
+    .uk-brand{
+      color: $text-color;
+      font-family: $secondary-fonts;
+      font-style: normal;
+      font-weight: bold;
+      display: flex;
+      align-items: flex-end;
+      letter-spacing: 0.25px;
+
+      &-name{
+        margin-left: 5px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .uk-but-product{
+    margin-top: 6%;
+
+    .uk-quantity{
+      color: $text-color;
+      font-family: $primary-fonts;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.25px;
+
+      .uk-mat-button{
+        background-color: $acent-color;
+        color: $text-color;
+        width: 44px;
+        height: 44px;
+        border-radius: 50px;
+        border: 0px transparent;
+
+        mat-icon{
+          height: 24px;
+          width: 24px;
+        }
+      }
+      .uk-quantity-text{
+        margin: 15px;
+        color: $text-color;
+      }
+    }
+  }
+
+  .uk-product-but{
+    margin-top: 2%;
+
+
+    .uk-wishlist{
+      height: 48px;
+      width: 48px;
+      border: 0px transparent;
+      background: linear-gradient(136.25deg, #ED247E 2.35%, #81449A 75.39%);
+      border-radius: 30px;
+
+      mat-icon{
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    .uk-add-cart{
+      margin-left: 5%;
+      background-color: $acent-color;
+      padding: 22px 30px;
+      border-radius: 25px;
+      border:0px transparent;
+
+      .uk-span{
+        font-family: $secondary-fonts;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        align-items: center;
+        text-align: center;
+        color: $text-color;
+        height: 48px;
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,74 @@
+<!-- PHONE-SIZE -->
+
+<nav class="uk-navbar-container-phone uk-hidden@l"  uk-navbar>
+  <div class="uk-navbar-left uk-flex uk-flex-center">
+      <ul class="uk-navbar-nav">
+        <li>
+          <button class="uk-icon-button"><mat-icon>reorder</mat-icon></button>
+        </li>
+        <li class="uk-logo uk-flex uk-flex-middle">
+          <img width="80%" src="./assets/logo/logo.svg" alt="">
+        </li>
+     </ul>
+  </div>
+<div class="uk-navbar-right uk-flex uk-flex-center">
+    <ul class="uk-navbar-nav">
+      <li>
+        <button class="uk-icon-button"><mat-icon>shopping_cart</mat-icon></button>
+      </li>
+      <li>
+        <button (click)="Authentication()" class="uk-icon-button"><mat-icon>person</mat-icon></button>
+      </li>
+      <li>
+        <button class="uk-icon-button"><mat-icon>favorite</mat-icon></button>
+      </li>
+   </ul>
+  </div>
+</nav>
+
+
+<div class="uk-width-1-1 uk-body-phone uk-hidden@m">
+  <router-outlet></router-outlet>
+ </div>
+
+<!-- DESKTOP-SIZE -->
+<nav class="uk-navbar-container uk-visible@l" data-uk-sticky uk-navbar>
+  <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav">
+          <li routerLink="" style="cursor:pointer;" > <img width="75%" src="../assets/logo/logo.svg" alt="Buildoster Logo"> </li>
+      </ul>
+  </div>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav">
+      <li><button mat-ripple class="uk-icon-button"><mat-icon>shopping_cart</mat-icon></button></li>
+      <li><button mat-ripple (click)="Authentication()" class="uk-icon-button"><mat-icon>person</mat-icon></button></li>
+      <li><button mat-ripple class="uk-icon-button"><mat-icon>favorite</mat-icon></button></li>
+    </ul>
+  </div>
+</nav>
+
+<div uk-grid>
+<div  class="uk-width-1-5 uk-side  uk-visible@l">
+  <div class="uk-side-toolbar uk-flex uk-flex-center" >
+    <div class="uk-child-width-1-1 uk-grid-small  " uk-grid>
+      <div><button mat-ripple class="uk-side-toolbar-button uk-text-left active" routerLink="/product/list" ><img class="uk-side-toolbar-button-icon" src="./assets/icon/processor.png">Processor</button></div>
+      <div><button mat-ripple class="uk-side-toolbar-button uk-text-left"><img class="uk-side-toolbar-button-icon" src="./assets/icon/motherboard.png">Motherboard</button></div>
+      <div><button mat-ripple class="uk-side-toolbar-button uk-text-left"><img class="uk-side-toolbar-button-icon" src="./assets/icon/graphic-card.png">Graphic Card</button></div>
+      <div><button mat-ripple class="uk-side-toolbar-button uk-text-left"><img class="uk-side-toolbar-button-icon" src="./assets/icon/ram.png">RAM</button></div>
+      <div><button mat-ripple class="uk-side-toolbar-button uk-text-left"><img class="uk-side-toolbar-button-icon" src="./assets/icon/hdd.png">Hard Disk</button></div>
+      <div><button mat-ripple class="uk-side-toolbar-button uk-text-left"><img class="uk-side-toolbar-button-icon" src="./assets/icon/psu.png">Power Supply Unit</button></div>
+      <div><button mat-ripple class="uk-side-toolbar-button uk-text-left"><img class="uk-side-toolbar-button-icon" src="./assets/icon/monitor.png">Monitor</button></div>
+      <div><button mat-ripple class="uk-side-toolbar-button uk-text-left"><img class="uk-side-toolbar-button-icon" src="./assets/icon/mouse.png">Mouse</button></div>
+      <div><button mat-ripple class="uk-side-toolbar-button uk-text-left"><img class="uk-side-toolbar-button-icon" src="./assets/icon/keyboard.png">Keyboard</button></div>
+      <div class=" uk-flex uk-flex-bottom"><button mat-ripple class="uk-side-toolbar-bottom uk-text-center">BUILD NOW</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="uk-width-4-5 uk-visible@m uk-body">
+ <router-outlet></router-outlet>
+</div>
+
+
+
+

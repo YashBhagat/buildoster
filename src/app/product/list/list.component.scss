@@ -1,0 +1,90 @@
+@import "/src/style/_variables";
+@import "/src/style/component/button";
+
+.uk-section{
+  width: 100%;
+  padding: 5px 10px;
+
+   .uk-card-product{
+    margin: 0 auto;
+    padding: 5%;
+    background-color: $acent-color;
+    box-shadow: -12px 13px 11px #0F1546;
+    border-radius: 15px;
+    color: $text-color;
+    width: 90%;
+
+    img{
+         margin-top: -25px;
+         width: 250px;
+         height: 250px;
+        }
+       .uk-top-button{
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+
+        }
+        .uk-card-badges {
+          width: 40px;
+          height: 40px;
+          padding: 0 10px;
+          background: $acent-color;
+          color: $text-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 0;
+          border-radius: 20px;
+          text-transform: uppercase;
+          border: transparent;
+        }
+        .uk-product-desc{
+          height: 3vh;
+
+          .uk-product-name{
+            color: $text-color;
+            font-family: $secondary-fonts;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0.25px;
+            text-transform: uppercase;
+              }
+
+      .uk-product-price{
+        color: $text-color;
+        font-family: $primary-fonts;
+        font-style: light;
+        font-weight: 300;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        letter-spacing: 0.25px;
+
+      }
+      .uk-product-mrp{
+        float: right;
+        margin-top: 8px;
+        color: $warm-color;
+        font-family: $primary-fonts;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        margin-top: -10%;
+        letter-spacing: 0.25px;
+        text-decoration-line: line-through;
+      }
+
+        }
+
+   }
+
+   .mat-menu-content {
+    background-color: 'red' !important;
+}
+
+}

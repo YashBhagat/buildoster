@@ -1,0 +1,71 @@
+<div class="uk-section  ">
+
+
+  <!-- PRODUCT-FILTER -->
+  <div class="uk-text-center" uk-grid>
+    <div class=" uk-width-1-2">
+       <button mat-ripple class="uk-button-icon">
+        <mat-icon>filter_alt</mat-icon>
+        Filter</button>
+    </div>
+    <div  class="uk-width-1-2 uk-flex uk-flex-right  ">
+      <button [matMenuTriggerFor]="menu" mat-ripple class="uk-button-icon">
+        <mat-icon>filter_list</mat-icon>
+        Sort By</button>
+    </div>
+    <mat-menu #menu="matMenu" >
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+</div>
+
+
+
+  <!-- PRODUCT LIST -->
+  <div class="uk-grid-medium uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l  uk-child-width-1-1 "  uk-height-match="target: > div > .uk-card-product" uk-grid>
+
+    <div *ngFor="let item of productList">
+      <div class="uk-card-product ">
+        <div class="uk-top-button">
+          <button mat-ripple class="uk-card-badges ">
+            <mat-icon>favorite</mat-icon>
+          </button>
+        </div>
+
+        <div class="uk-flex uk-flex-center">
+          <img src="{{item.thumbnail.img_url}}">
+        </div>
+        <div class="uk-text-center uk-product-desc" uk-grid>
+          <div class="uk-width-expand uk-text-left">
+             <h3 class="uk-product-name">{{item.product_name}}</h3>
+          </div>
+          <div class="uk-width-auto">
+            <h4 class="uk-product-price"> {{ item.price | currency:'INR':'Rs '}}</h4>
+            <h5 class="uk-product-mrp"> {{ item.mrp | currency:'INR':'Rs '}} </h5>
+        </div>
+      </div>
+      <div uk-grid>
+        <div class="uk-width-1-2">
+          <button mat-ripple  class="uk-button-product-buy uk-width-1-1" routerLink="/product/deatils">Buy Now</button>
+        </div>
+        <div class="uk-width-expand">
+          <button mat-ripple class="uk-button-product-cart uk-width-1-1">Add to Cart</button>
+        </div>
+      </div>
+      </div>
+
+
+  </div>
+
+</div>
+</div>

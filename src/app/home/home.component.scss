@@ -1,0 +1,92 @@
+@import "/src/style/_variables";
+@import "/src/style/component/button";
+
+
+.uk-body{
+  padding: 0px 30px;
+  margin-left: 20%;
+
+  &-main{
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 20px;
+
+    .uk-card-home{
+      background-color: $acent-color;
+      border-radius: 25px;
+      color: $text-color;
+      box-shadow: -12px 13px 11px #0F1546;
+      padding: 2% 10%;
+
+      .uk-text-main{
+        font-family: Lexend;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 42px;
+        align-items: center;
+        letter-spacing: 0.25px;
+      }
+
+      .uk-text-sub{
+        font-family: Lexend;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        align-items: center;
+        letter-spacing: 0.15px;
+        color: $text-color;
+      }
+
+      .uk-button-section{
+        margin-top: 25px;
+      }
+
+    }
+
+
+
+    .uk-card-componet{
+      margin: 16px;
+      background-color: $acent-color;
+      color: $text-color;
+      box-shadow: -12px 13px 11px #0F1546;
+      border-radius: 15px;
+      padding: 30px;
+
+      .uk-component-name{
+      color: $text-color;
+       font-family: Lexend;
+       font-style: normal;
+       font-weight: bold;
+       font-size: 22px;
+       line-height: 35px;
+       display: flex;
+
+      }
+      .uk-component-sub{
+        font-family: Lexend;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.15px;
+        color: $text-color;
+      }
+    }
+
+    .uk-position-small {
+      background: $acent-color;
+      border-radius: 25px;
+      color: $text-color;
+      max-width: calc(100% - (15px * 2));
+      margin: 10px;
+  }
+  }
+
+
+}
